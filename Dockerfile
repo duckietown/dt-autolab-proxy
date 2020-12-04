@@ -77,3 +77,12 @@ LABEL org.duckietown.label.module.type="${REPO_NAME}" \
     org.duckietown.label.maintainer="${MAINTAINER}"
 # <== Do not change the code above this line
 # <==================================================
+
+# configure nginx to run in foreground
+RUN echo "daemon off;" >> /etc/nginx/nginx.conf
+
+# remove default virtual host
+RUN rm /etc/nginx/sites-enabled/default
+
+# apply custom configuration
+COPY assets/proxy.conf /etc/nginx/conf.d/default.conf
