@@ -1,0 +1,8 @@
+name: "dt-autolab-proxy"
+maintainer:
+    name: "Andrea F. Daniele"
+    email: "afdaniele@duckietown.com"
+description: "Provides a human-friendly mapping to APIs and services running on an Autolab device"
+version: 0.0.1
+# pick an icon from: https://fontawesome.com/v4.7.0/icons/
+icon: sitemap
